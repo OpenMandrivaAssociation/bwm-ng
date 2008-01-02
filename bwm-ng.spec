@@ -11,6 +11,7 @@ URL:		http://gropp.org/?id=projects&sub=bwm-ng
 Source:		http://gropp.org/bwm-ng/bwm-ng-%{version}.tar.gz
 License:	GPLv2+
 Group:		Monitoring
+BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	ncurses-devel
 
 %description
