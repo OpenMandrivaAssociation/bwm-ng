@@ -1,7 +1,7 @@
 
 %define name	bwm-ng
 %define version	0.6
-%define rel	1
+%define rel	2
 
 Summary:	Console-based live network and disk io bandwidth monitor
 Name:		%{name}
