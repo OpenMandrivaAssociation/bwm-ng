@@ -9,10 +9,13 @@ Version:	%{version}
 Release:	%mkrel %{rel}
 URL:		http://gropp.org/?id=projects&sub=bwm-ng
 Source:		http://gropp.org/bwm-ng/bwm-ng-%{version}.tar.gz
+# fixes build, from upstream
+Patch0:		bwm-ng-fmt+retvalues.patch
 License:	GPLv2+
 Group:		Monitoring
 BuildRoot:	%{_tmppath}/%{name}-root
 BuildRequires:	ncurses-devel
+BuildRequires:	libstatgrab-devel
 
 %description
 Bandwidth Monitor NG is a small and simple console-based live
@@ -31,10 +34,10 @@ Short list of features:
 
 %prep
 %setup -q
+%apply_patches
 
 %build
-# (anssi 12/2007) also supports --with-libstatgrab, but statgrab not packaged
-%configure2_5x --with-ncurses --with-partitions --with-procnetdev
+%configure2_5x --with-ncurses --with-partitions --with-procnetdev --with-libstatgrab
 %make
 
 %install
