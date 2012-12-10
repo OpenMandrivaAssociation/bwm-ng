@@ -52,3 +52,29 @@ rm -rf %{buildroot}
 %doc README AUTHORS ChangeLog NEWS THANKS bwm-ng.conf-example bwm-ng.css
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1*
+
+
+%changelog
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 0.6-3mdv2011.0
++ Revision: 610088
+- rebuild
+
+* Sat Feb 06 2010 Anssi Hannula <anssi@mandriva.org> 0.6-2mdv2010.1
++ Revision: 501440
+- fix build (fmt+retvalues.patch from upstream)
+- build with libstatgrab support
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - rebuild
+
+* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 0.6-1mdv2009.0
++ Revision: 140691
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Mon Dec 03 2007 Anssi Hannula <anssi@mandriva.org> 0.6-1mdv2008.1
++ Revision: 114538
+- initial Mandriva release
+
