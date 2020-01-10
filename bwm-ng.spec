@@ -34,7 +34,7 @@ Short list of features:
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 %build
 %configure2_5x --with-ncurses --with-partitions --with-procnetdev --with-libstatgrab
