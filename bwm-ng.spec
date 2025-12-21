@@ -14,6 +14,11 @@ Patch0:		bwm-ng-fmt+retvalues.patch
 License:	GPLv2+
 Group:		Monitoring
 BuildRoot:	%{_tmppath}/%{name}-root
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	ncurses-devel
 BuildRequires:	libstatgrab-devel
 
