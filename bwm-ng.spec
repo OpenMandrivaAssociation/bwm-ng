@@ -6,7 +6,7 @@
 Summary:	Console-based live network and disk io bandwidth monitor
 Name:		%{name}
 Version:	%{version}
-Release:	%mkrel %{rel}
+Release:	%{rel}.1
 URL:		https://gropp.org/?id=projects&sub=bwm-ng
 Source:		http://gropp.org/bwm-ng/bwm-ng-%{version}.tar.gz
 # fixes build, from upstream
